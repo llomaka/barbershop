@@ -1,9 +1,9 @@
 @charset 'utf-8';
-// @import 'utils/variables';
+@import 'utils/variables';
 @import 'base/no-browser-styles';
-// @import 'utils/extend';
+@import 'utils/extend';
 // @import 'utils/mixins';
-// @import 'layout/page';
+@import 'base/page';
 // @import 'layout/container';
 // @import 'components/header';
 // @import 'components/menu';
