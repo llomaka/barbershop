@@ -31,3 +31,43 @@
   //   background-color: $hero-btn-accent-color;
   // }
 }
+
+%cross-title {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  word-break: break-word;
+  white-space: pre-wrap;
+
+  &::before {
+    margin-right: 20px;
+    content: '';
+    width: 60px;
+    height: 1px;
+    background: currentColor;
+  }
+}
+
+%title {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+}
+
+%tagline {
+  font-size: 16px;
+  line-height: 1.63;
+}
+
+%text {
+  font-size: 14px;
+  line-height: 1.86;
+}

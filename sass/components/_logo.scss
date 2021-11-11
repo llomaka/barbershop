@@ -1,0 +1,13 @@
+.logo {
+  color: $white-color;
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.logo__icon {
+  fill: currentColor;
+}

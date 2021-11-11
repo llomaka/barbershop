@@ -22,185 +22,183 @@
   </head>
   <body class="page">
     <header class="header">
-      <div class="container menu">
-        <a href="./index.html" class="logo">
-          <svg class="logo__image" width="69" height="56">
-            <use href="./images/icons.svg#icon-logo"></use></svg
-        ></a>
-        <button
-          class="button menu__button menu__button--open"
-          type="button"
-          aria-expanded="false"
-        >
-          <svg
-            class="menu__icon"
-            width="24"
-            height="16"
-            aria-label="Переключатель мобильного меню"
-            aria-controls="menu__container"
-          >
-            <use href="./images/icons.svg#icon-menu"></use>
-          </svg>
-        </button>
-        <div class="menu__container" id="menu__container">
+      <div class="container">
+        <div class="menu">
+          <a href="./index.html" class="logo">
+            <svg class="logo__icon" width="69" height="56">
+              <use href="./images/icons.svg#icon-logo"></use></svg
+          ></a>
           <button
-            class="button menu__button menu__button--close"
+            class="button menu__button menu__button--open"
             type="button"
             aria-expanded="false"
           >
             <svg
               class="menu__icon"
-              width="19"
-              height="19"
+              width="24"
+              height="16"
               aria-label="Переключатель мобильного меню"
+              aria-controls="menu__container"
             >
-              <use href="./images/icons.svg#icon-menu-close"></use>
+              <use href="./images/icons.svg#icon-menu"></use>
             </svg>
           </button>
-          <nav class="navigation">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a href="#about-us" class="menu__link">О нас</a>
+          <div class="menu__container" id="menu__container">
+            <button
+              class="button menu__button menu__button--close"
+              type="button"
+              aria-expanded="false"
+            >
+              <svg
+                class="menu__icon"
+                width="19"
+                height="19"
+                aria-label="Переключатель мобильного меню"
+              >
+                <use href="./images/icons.svg#icon-menu-close"></use>
+              </svg>
+            </button>
+            <nav class="navigation">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="#about-us" class="menu__link">О нас</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#prices" class="menu__link">Услуги и цены</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#masters" class="menu__link">Мастера</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#contacts" class="menu__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <a href="tel:+380441111111" class="menu__link">+38 044 111 11 11</a>
+            <a href="#" class="menu__link online-subscription">онлайн-запись</a>
+            <ul class="site-social">
+              <li class="site-social__item">
+                <a
+                  href="https://www.instagram.com/goitclub/"
+                  class="site-social__link"
+                  target="_blank"
+                  rel="noreferrer noopener nofollow"
+                  >Instagram</a
+                >
               </li>
-              <li class="menu__item">
-                <a href="#prices" class="menu__link">Услуги и цены</a>
-              </li>
-              <li class="menu__item">
-                <a href="#masters" class="menu__link">Мастера</a>
-              </li>
-              <li class="menu__item">
-                <a href="#contacts" class="menu__link">Контакты</a>
+              <li class="site-social__item">
+                <a
+                  href="https://www.youtube.com/channel/UCN7NQEBOUuIoXrJZzqVb58Q"
+                  class="site-social__link"
+                  target="_blank"
+                  rel="noreferrer noopener nofollow"
+                  >Youtube</a
+                >
               </li>
             </ul>
-          </nav>
-          <a href="tel:+380441111111" class="menu__link">+38 044 111 11 11</a>
-          <a href="#" class="menu__link online-subscription">онлайн-запись</a>
-          <ul class="site-social">
-            <li class="site-social__item">
-              <a
-                href="https://www.instagram.com/goitclub/"
-                class="site-social__link"
-                target="_blank"
-                rel="noreferrer noopener nofollow"
-                >Instagram</a
-              >
-            </li>
-            <li class="site-social__item">
-              <a
-                href="https://www.youtube.com/channel/UCN7NQEBOUuIoXrJZzqVb58Q"
-                class="site-social__link"
-                target="_blank"
-                rel="noreferrer noopener nofollow"
-                >Youtube</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="container">
-          <div class="carousel">
-            <button
-              class="button carousel__button carousel__button--previous"
-              type="button"
-            >
-              Назад</button
-            ><button
-              class="button carousel__button carousel__button--next"
-              type="button"
-            >
-              Вперед
-            </button>
-            <div class="carousel__item carousel__item--main">
-              <picture class="carousel__image">
-                <source
-                  media="(max-width: 767px)"
-                  srcset="
-                    ./images/slider-first.jpg    1x,
-                    ./images/slider-first@2x.jpg 2x,
-                    ./images/slider-first@3x.jpg 3x
-                  " />
-                <source
-                  media="(max-width: 1279px)"
-                  srcset="
-                    ./images/slider-first-tab.jpg    1x,
-                    ./images/slider-first-tab@2x.jpg 2x,
-                    ./images/slider-first-tab@3x.jpg 3x
-                  " />
-                <source
-                  media="(min-width: 1280px)"
-                  srcset="
-                    ./images/slider-first-desktop.jpg    1x,
-                    ./images/slider-first-desktop@2x.jpg 2x,
-                    ./images/slider-first-desktop@3x.jpg 3x
-                  " />
-                <img
-                  src="./images/slider-first.jpg"
-                  alt="Мастер стрижет клиента"
-                  width="450"
-              /></picture>
-            </div>
-            <div class="carousel__item">
-              <picture class="carousel__image">
-                <source
-                  media="(max-width: 767px)"
-                  srcset="
-                    ./images/slider-second.jpg    1x,
-                    ./images/slider-second@2x.jpg 2x,
-                    ./images/slider-second@3x.jpg 3x
-                  " />
-                <source
-                  media="(max-width: 1279px)"
-                  srcset="
-                    ./images/slider-second-tab.jpg    1x,
-                    ./images/slider-second-tab@2x.jpg 2x,
-                    ./images/slider-second-tab@3x.jpg 3x
-                  " />
-                <source
-                  media="(min-width: 1280px)"
-                  srcset="
-                    ./images/slider-second-desktop.jpg    1x,
-                    ./images/slider-second-desktop@2x.jpg 2x,
-                    ./images/slider-second-desktop@3x.jpg 3x
-                  " />
-                <img
-                  src="./images/slider-second.jpg"
-                  alt="Мастер стрижет клиента"
-                  width="450"
-              /></picture>
-            </div>
-            <div class="carousel__item">
-              <picture class="carousel__image">
-                <source
-                  media="(max-width: 767px)"
-                  srcset="
-                    ./images/slider-third.jpg    1x,
-                    ./images/slider-third@2x.jpg 2x,
-                    ./images/slider-third@3x.jpg 3x
-                  " />
-                <source
-                  media="(max-width: 1279px)"
-                  srcset="
-                    ./images/slider-third-tab.jpg    1x,
-                    ./images/slider-third-tab@2x.jpg 2x,
-                    ./images/slider-third-tab@3x.jpg 3x
-                  " />
-                <source
-                  media="(min-width: 1280px)"
-                  srcset="
-                    ./images/slider-third-desktop.jpg    1x,
-                    ./images/slider-third-desktop@2x.jpg 2x,
-                    ./images/slider-third-desktop@3x.jpg 3x
-                  " />
-                <img
-                  src="./images/slider-third.jpg"
-                  alt="Мастер стрижет клиента"
-                  width="450"
-              /></picture>
-            </div>
           </div>
+        </div>
+        <div class="carousel">
+          <button
+            class="button carousel__button carousel__button--previous"
+            type="button"
+          >
+            Назад</button
+          ><button
+            class="button carousel__button carousel__button--next"
+            type="button"
+          >
+            Вперед
+          </button>
+          <div class="carousel__item carousel__item--main">
+            <picture class="carousel__image">
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/slider-first.jpg    1x,
+                  ./images/slider-first@2x.jpg 2x,
+                  ./images/slider-first@3x.jpg 3x
+                " />
+              <source
+                media="(max-width: 1279px)"
+                srcset="
+                  ./images/slider-first-tab.jpg    1x,
+                  ./images/slider-first-tab@2x.jpg 2x,
+                  ./images/slider-first-tab@3x.jpg 3x
+                " />
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/slider-first-desktop.jpg    1x,
+                  ./images/slider-first-desktop@2x.jpg 2x,
+                  ./images/slider-first-desktop@3x.jpg 3x
+                " />
+              <img
+                src="./images/slider-first.jpg"
+                alt="Мастер стрижет клиента"
+                width="450"
+            /></picture>
+          </div>
+          <div class="carousel__item">
+            <picture class="carousel__image">
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/slider-second.jpg    1x,
+                  ./images/slider-second@2x.jpg 2x,
+                  ./images/slider-second@3x.jpg 3x
+                " />
+              <source
+                media="(max-width: 1279px)"
+                srcset="
+                  ./images/slider-second-tab.jpg    1x,
+                  ./images/slider-second-tab@2x.jpg 2x,
+                  ./images/slider-second-tab@3x.jpg 3x
+                " />
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/slider-second-desktop.jpg    1x,
+                  ./images/slider-second-desktop@2x.jpg 2x,
+                  ./images/slider-second-desktop@3x.jpg 3x
+                " />
+              <img
+                src="./images/slider-second.jpg"
+                alt="Мастер стрижет клиента"
+                width="450"
+            /></picture>
+          </div>
+          <div class="carousel__item">
+            <picture class="carousel__image">
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/slider-third.jpg    1x,
+                  ./images/slider-third@2x.jpg 2x,
+                  ./images/slider-third@3x.jpg 3x
+                " />
+              <source
+                media="(max-width: 1279px)"
+                srcset="
+                  ./images/slider-third-tab.jpg    1x,
+                  ./images/slider-third-tab@2x.jpg 2x,
+                  ./images/slider-third-tab@3x.jpg 3x
+                " />
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/slider-third-desktop.jpg    1x,
+                  ./images/slider-third-desktop@2x.jpg 2x,
+                  ./images/slider-third-desktop@3x.jpg 3x
+                " />
+              <img
+                src="./images/slider-third.jpg"
+                alt="Мастер стрижет клиента"
+                width="450"
+            /></picture>
+          </div>
+        </div>
+        <div class="hero">
           <h2 class="hero__cross-title" lang="en">
             A hair salon for men in Kyiv
           </h2>
@@ -210,6 +208,11 @@
             со вкусом.
           </p>
         </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container"></div>
       </section>
       <section class="about-us section" id="about-us">
         <div class="container">
@@ -253,7 +256,10 @@
               alt="Мастер бреет опасной бритвой шею клиента"
               width="330"
           /></picture>
-          <h3 class="about-us__cross-title">О НАС</h3>
+          <h3 class="about-us__cross-title">
+            О НАС Мы команда, которая никогда не останавливается на достигнутом
+            и жаждет перемен.
+          </h3>
           <h2 class="about-us__title">Лучший Барбершоп твоего города</h2>
           <p class="about-us__tagline">
             Если ты хочешь добавить в свой образ больше уверенности – тебе точно
@@ -374,62 +380,64 @@
                   width="418"
                 />
               </picture>
-              <p class="masters__name">John Smith</p>
-              <p class="masters__position">Extreme Barber</p>
-              <ul class="social__list">
-                <li class="social__item">
-                  <a
-                    class="social__link"
-                    href="#"
-                    target="_blank"
-                    rel="noreferrer noopener nofollow"
-                  >
-                    <svg class="social__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
-                    <span class="social__text">Instagram</span></a
-                  >
-                </li>
-                <li class="social__item">
-                  <a
-                    class="social__link"
-                    href="#"
-                    target="_blank"
-                    rel="noreferrer noopener nofollow"
-                  >
-                    <svg class="social__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
-                    <span class="social__text">Твиттер</span>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a
-                    class="social__link"
-                    href="#"
-                    target="_blank"
-                    rel="noreferrer noopener nofollow"
-                  >
-                    <svg class="social__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                    <span class="social__text">Facebook</span>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a
-                    class="social__link"
-                    href=""
-                    target="_blank"
-                    rel="noreferrer noopener nofollow"
-                  >
-                    <svg class="social__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
-                    <span class="social__text">LinkedIn</span>
-                  </a>
-                </li>
-              </ul>
+              <div class="masters__caption">
+                <p class="masters__name">John Smith</p>
+                <p class="masters__position">Extreme Barber</p>
+                <ul class="social">
+                  <li class="social__item">
+                    <a
+                      class="social__link"
+                      href="#"
+                      target="_blank"
+                      rel="noreferrer noopener nofollow"
+                    >
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                      <span class="social__text">Instagram</span></a
+                    >
+                  </li>
+                  <li class="social__item">
+                    <a
+                      class="social__link"
+                      href="#"
+                      target="_blank"
+                      rel="noreferrer noopener nofollow"
+                    >
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                      <span class="social__text">Твиттер</span>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a
+                      class="social__link"
+                      href="#"
+                      target="_blank"
+                      rel="noreferrer noopener nofollow"
+                    >
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                      <span class="social__text">Facebook</span>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a
+                      class="social__link"
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener nofollow"
+                    >
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                      <span class="social__text">LinkedIn</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="masters__item">
               <picture class="masters__image">
@@ -463,62 +471,64 @@
                   width="418"
                 />
               </picture>
-              <p class="masters__name">Michele Doe</p>
-              <p class="masters__position">Extreme Barber</p>
-              <ul class="social__list">
-                <li class="social__item">
-                  <a
-                    class="social__link"
-                    href="#"
-                    target="_blank"
-                    rel="noreferrer noopener nofollow"
-                  >
-                    <svg class="social__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
-                    <span class="social__text">Instagram</span></a
-                  >
-                </li>
-                <li class="social__item">
-                  <a
-                    class="social__link"
-                    href="#"
-                    target="_blank"
-                    rel="noreferrer noopener nofollow"
-                  >
-                    <svg class="social__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
-                    <span class="social__text">Твиттер</span>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a
-                    class="social__link"
-                    href="#"
-                    target="_blank"
-                    rel="noreferrer noopener nofollow"
-                  >
-                    <svg class="social__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                    <span class="social__text">Facebook</span>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a
-                    class="social__link"
-                    href=""
-                    target="_blank"
-                    rel="noreferrer noopener nofollow"
-                  >
-                    <svg class="social__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
-                    <span class="social__text">LinkedIn</span>
-                  </a>
-                </li>
-              </ul>
+              <div class="masters__caption">
+                <p class="masters__name">Michele Doe</p>
+                <p class="masters__position">Extreme Barber</p>
+                <ul class="social">
+                  <li class="social__item">
+                    <a
+                      class="social__link"
+                      href="#"
+                      target="_blank"
+                      rel="noreferrer noopener nofollow"
+                    >
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                      <span class="social__text">Instagram</span></a
+                    >
+                  </li>
+                  <li class="social__item">
+                    <a
+                      class="social__link"
+                      href="#"
+                      target="_blank"
+                      rel="noreferrer noopener nofollow"
+                    >
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                      <span class="social__text">Твиттер</span>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a
+                      class="social__link"
+                      href="#"
+                      target="_blank"
+                      rel="noreferrer noopener nofollow"
+                    >
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                      <span class="social__text">Facebook</span>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a
+                      class="social__link"
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener nofollow"
+                    >
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                      <span class="social__text">LinkedIn</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="masters__item">
               <picture class="masters__image">
@@ -552,62 +562,64 @@
                   width="418"
                 />
               </picture>
-              <p class="masters__name">Alan Black</p>
-              <p class="masters__position">Extreme Barber</p>
-              <ul class="social__list">
-                <li class="social__item">
-                  <a
-                    class="social__link"
-                    href="#"
-                    target="_blank"
-                    rel="noreferrer noopener nofollow"
-                  >
-                    <svg class="social__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
-                    <span class="social__text">Instagram</span></a
-                  >
-                </li>
-                <li class="social__item">
-                  <a
-                    class="social__link"
-                    href="#"
-                    target="_blank"
-                    rel="noreferrer noopener nofollow"
-                  >
-                    <svg class="social__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
-                    <span class="social__text">Твиттер</span>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a
-                    class="social__link"
-                    href="#"
-                    target="_blank"
-                    rel="noreferrer noopener nofollow"
-                  >
-                    <svg class="social__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                    <span class="social__text">Facebook</span>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a
-                    class="social__link"
-                    href=""
-                    target="_blank"
-                    rel="noreferrer noopener nofollow"
-                  >
-                    <svg class="social__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
-                    <span class="social__text">LinkedIn</span>
-                  </a>
-                </li>
-              </ul>
+              <div class="masters__caption">
+                <p class="masters__name">Alan Black</p>
+                <p class="masters__position">Extreme Barber</p>
+                <ul class="social">
+                  <li class="social__item">
+                    <a
+                      class="social__link"
+                      href="#"
+                      target="_blank"
+                      rel="noreferrer noopener nofollow"
+                    >
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                      <span class="social__text">Instagram</span></a
+                    >
+                  </li>
+                  <li class="social__item">
+                    <a
+                      class="social__link"
+                      href="#"
+                      target="_blank"
+                      rel="noreferrer noopener nofollow"
+                    >
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                      <span class="social__text">Твиттер</span>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a
+                      class="social__link"
+                      href="#"
+                      target="_blank"
+                      rel="noreferrer noopener nofollow"
+                    >
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                      <span class="social__text">Facebook</span>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a
+                      class="social__link"
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener nofollow"
+                    >
+                      <svg class="social__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                      <span class="social__text">LinkedIn</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
@@ -753,8 +765,8 @@
           </ul>
         </div>
       </section>
-      <section class="appointment section">
-        <div class="containter">
+      <section class="contacts section">
+        <div class="container">
           <form class="appointment__form form" autocomplete="on">
             <div
               class="form__group"
@@ -786,11 +798,8 @@
             </div>
             <button class="button form__button" type="submit">отправить</button>
           </form>
-        </div>
-      </section>
-      <section class="contacts section" id="contacts">
-        <div class="container">
-          <h2 class="contacts__title">Контакты</h2>
+
+          <h2 class="contacts__title" id="contacts">Контакты</h2>
           <ul class="contacts__list">
             <li class="contacts__item">
               <svg class="contacts__icon" width="24" height="24">

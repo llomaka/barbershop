@@ -22,7 +22,12 @@ h4,
 h5,
 h6,
 p,
-li {
+li,
+address {
   margin: 0px;
   padding: 0px;
+}
+
+address {
+  font-style: inherit;
 }

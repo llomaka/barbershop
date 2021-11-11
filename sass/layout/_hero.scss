@@ -1,0 +1,9 @@
+.hero__cross-title {
+  @extend %cross-title;
+  color: $secondary-title-color;
+}
+
+.hero__title {
+  @extend %title;
+  color: $white-color;
+}
