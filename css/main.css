@@ -385,11 +385,7 @@ address {
   margin-right: 30px;
 }
 
-.features__item:nth-child(2) {
-  margin-top: 35px;
-}
-
-.features__item:last-child {
+.features__item:nth-child(2n) {
   margin-top: 30px;
 }
 
