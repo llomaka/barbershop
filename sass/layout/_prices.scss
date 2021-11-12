@@ -59,6 +59,8 @@
 .prices__title {
   @extend %title;
   margin-bottom: 44px;
+  font-size: 42px;
+  line-height: 1.67;
   color: $white-color;
 }
 

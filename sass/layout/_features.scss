@@ -1,0 +1,64 @@
+.features__cross-title {
+  @extend %cross-title;
+}
+
+.features__title {
+  @extend %title;
+  font-size: 42px;
+  line-height: 1.67;
+}
+
+.features__text {
+  margin-bottom: 44px;
+  font-size: 18px;
+  line-height: 1.67;
+}
+
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features__item {
+  @include fbasis(2, 30px);
+  max-height: 133px;
+  padding: 20px;
+  text-align: center;
+  line-height: 1.36;
+  color: $title-color;
+  background-color: $background-color-light;
+
+  &:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+
+  &:nth-child(2) {
+    margin-top: 35px;
+  }
+
+  &:last-child {
+    margin-top: 30px;
+  }
+}
+
+.features__value {
+  display: inline-flex;
+  margin-bottom: 6px;
+  font-weight: 700;
+  font-size: 42px;
+
+  &::after {
+    margin-top: 8px;
+    vertical-align: text-top;
+    content: '+';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.38;
+    color: $accent-color;
+  }
+}
+
+.features__caption {
+  font-weight: 600;
+  font-size: 11px;
+}

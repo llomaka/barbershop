@@ -11,7 +11,7 @@
   margin: -1px;
 }
 
-.hero__cross-title, .about-us__cross-title, .prices__cross-title {
+.hero__cross-title, .about-us__cross-title, .prices__cross-title, .features__cross-title {
   margin-bottom: 20px;
   font-weight: 600;
   font-size: 11px;
@@ -21,14 +21,14 @@
 }
 
 @media screen and (min-width: 480px) {
-  .hero__cross-title, .about-us__cross-title, .prices__cross-title {
+  .hero__cross-title, .about-us__cross-title, .prices__cross-title, .features__cross-title {
     margin-left: 80px;
     position: relative;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .hero__cross-title::before, .about-us__cross-title::before, .prices__cross-title::before {
+  .hero__cross-title::before, .about-us__cross-title::before, .prices__cross-title::before, .features__cross-title::before {
     position: absolute;
     left: -80px;
     top: 6px;
@@ -40,7 +40,7 @@
   }
 }
 
-.hero__title, .about-us__title, .prices__title {
+.hero__title, .about-us__title, .prices__title, .features__title {
   margin-bottom: 20px;
   font-family: Raleway;
   font-weight: 700;
@@ -296,6 +296,8 @@ address {
 
 .prices__title {
   margin-bottom: 44px;
+  font-size: 42px;
+  line-height: 1.67;
   color: #ffffff;
 }
 
@@ -351,6 +353,66 @@ address {
 .prices__subscription {
   display: flex;
   justify-content: center;
+}
+
+.features__title {
+  font-size: 42px;
+  line-height: 1.67;
+}
+
+.features__text {
+  margin-bottom: 44px;
+  font-size: 18px;
+  line-height: 1.67;
+}
+
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features__item {
+  flex-basis: calc((100% - ((2 - 1) * 30px)) / 2);
+  max-height: 133px;
+  padding: 20px;
+  text-align: center;
+  line-height: 1.36;
+  color: #303030;
+  background-color: #f7f7f7;
+}
+
+.features__item:nth-child(2n + 1) {
+  margin-right: 30px;
+}
+
+.features__item:nth-child(2) {
+  margin-top: 35px;
+}
+
+.features__item:last-child {
+  margin-top: 30px;
+}
+
+.features__value {
+  display: inline-flex;
+  margin-bottom: 6px;
+  font-weight: 700;
+  font-size: 42px;
+}
+
+.features__value::after {
+  margin-top: 8px;
+  vertical-align: text-top;
+  content: '+';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.38;
+  color: #ff6c00;
+}
+
+.features__caption {
+  font-weight: 600;
+  font-size: 11px;
 }
 
 .masters {
