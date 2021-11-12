@@ -1,3 +1,14 @@
 .masters {
   background-color: $background-color-light;
 }
+
+.masters__cross-title {
+  @extend %cross-title;
+  color: $title-color;
+}
+
+.masters__title {
+  @extend %title;
+  color: $title-color;
+  margin-bottom: 44px;
+}

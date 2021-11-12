@@ -15,8 +15,10 @@
 }
 
 .features__list {
-  display: flex;
-  flex-wrap: wrap;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .features__item {
@@ -28,12 +30,20 @@
   color: $title-color;
   background-color: $background-color-light;
 
-  &:nth-child(2n + 1) {
-    margin-right: 30px;
+  @media screen and (max-width: 479px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
-  &:nth-child(2n) {
-    margin-top: 30px;
+  @media screen and (min-width: 480px) {
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(2n) {
+      margin-top: 30px;
+    }
   }
 }
 

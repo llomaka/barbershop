@@ -11,7 +11,7 @@
   margin: -1px;
 }
 
-.hero__cross-title, .about-us__cross-title, .prices__cross-title, .features__cross-title {
+.hero__cross-title, .about-us__cross-title, .prices__cross-title, .features__cross-title, .masters__cross-title {
   margin-bottom: 20px;
   font-weight: 600;
   font-size: 11px;
@@ -21,14 +21,14 @@
 }
 
 @media screen and (min-width: 480px) {
-  .hero__cross-title, .about-us__cross-title, .prices__cross-title, .features__cross-title {
+  .hero__cross-title, .about-us__cross-title, .prices__cross-title, .features__cross-title, .masters__cross-title {
     margin-left: 80px;
     position: relative;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .hero__cross-title::before, .about-us__cross-title::before, .prices__cross-title::before, .features__cross-title::before {
+  .hero__cross-title::before, .about-us__cross-title::before, .prices__cross-title::before, .features__cross-title::before, .masters__cross-title::before {
     position: absolute;
     left: -80px;
     top: 6px;
@@ -40,7 +40,7 @@
   }
 }
 
-.hero__title, .about-us__title, .prices__title, .features__title {
+.hero__title, .about-us__title, .prices__title, .features__title, .masters__title {
   margin-bottom: 20px;
   font-family: Raleway;
   font-weight: 700;
@@ -366,9 +366,11 @@ address {
   line-height: 1.67;
 }
 
-.features__list {
-  display: flex;
-  flex-wrap: wrap;
+@media screen and (min-width: 480px) {
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .features__item {
@@ -381,12 +383,19 @@ address {
   background-color: #f7f7f7;
 }
 
-.features__item:nth-child(2n + 1) {
-  margin-right: 30px;
+@media screen and (max-width: 479px) {
+  .features__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
-.features__item:nth-child(2n) {
-  margin-top: 30px;
+@media screen and (min-width: 480px) {
+  .features__item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+  .features__item:nth-child(2n) {
+    margin-top: 30px;
+  }
 }
 
 .features__value {
@@ -413,6 +422,15 @@ address {
 
 .masters {
   background-color: #f7f7f7;
+}
+
+.masters__cross-title {
+  color: #303030;
+}
+
+.masters__title {
+  color: #303030;
+  margin-bottom: 44px;
 }
 
 .social {
