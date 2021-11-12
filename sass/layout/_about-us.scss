@@ -1,7 +1,24 @@
+.about-us__image {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
 .about-us__cross-title {
   @extend %cross-title;
+  color: $title-color;
 }
 
 .about-us__title {
   @extend %title;
+  color: $title-color;
+}
+
+.about-us__tagline {
+  @extend %tagline;
+  margin-bottom: 20px;
+}
+
+.about-us__text {
+  margin-bottom: 40px;
 }

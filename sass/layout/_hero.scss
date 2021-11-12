@@ -5,5 +5,10 @@
 
 .hero__title {
   @extend %title;
-  color: $white-color;
+  color: $header-color;
+}
+
+.hero__tagline {
+  @extend %tagline;
+  color: $secondary-text-color;
 }

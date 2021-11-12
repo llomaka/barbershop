@@ -75,7 +75,9 @@
               </ul>
             </nav>
             <a href="tel:+380441111111" class="menu__link">+38 044 111 11 11</a>
-            <a href="#" class="menu__link online-subscription">онлайн-запись</a>
+            <a href="#appointment" class="menu__link online-subscription"
+              >онлайн-запись</a
+            >
             <ul class="site-social">
               <li class="site-social__item">
                 <a
@@ -203,7 +205,7 @@
             A hair salon for men in Kyiv
           </h2>
           <h1 class="hero__title" lang="en">BarberShop</h1>
-          <p class="hero__text">
+          <p class="hero__tagline">
             Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и
             со вкусом.
           </p>
@@ -211,9 +213,6 @@
       </div>
     </header>
     <main>
-      <section class="hero">
-        <div class="container"></div>
-      </section>
       <section class="about-us section" id="about-us">
         <div class="container">
           <picture class="about-us__image">
@@ -256,10 +255,7 @@
               alt="Мастер бреет опасной бритвой шею клиента"
               width="330"
           /></picture>
-          <h3 class="about-us__cross-title">
-            О НАС Мы команда, которая никогда не останавливается на достигнутом
-            и жаждет перемен.
-          </h3>
+          <h3 class="about-us__cross-title">О НАС</h3>
           <h2 class="about-us__title">Лучший Барбершоп твоего города</h2>
           <p class="about-us__tagline">
             Если ты хочешь добавить в свой образ больше уверенности – тебе точно
@@ -272,7 +268,7 @@
             клиентами "на одной волне". Поэтому, мы всегда готовы
             усовершенствовать каждого, кто к нам приходит!
           </p>
-          <a href="#" class="online-subscription">онлайн-запись</a>
+          <a href="#appointment" class="online-subscription">онлайн-запись</a>
         </div>
       </section>
       <section class="prices section" id="prices">
@@ -310,7 +306,7 @@
               <span class="prices__value">от 200 грн.</span>
             </li>
           </ul>
-          <a href="#" class="online-subscription">онлайн-запись</a>
+          <a href="#appointment" class="online-subscription">онлайн-запись</a>
         </div>
       </section>
       <section class="features section">
@@ -767,7 +763,11 @@
       </section>
       <section class="contacts section">
         <div class="container">
-          <form class="appointment__form form" autocomplete="on">
+          <form
+            class="appointment__form form"
+            id="appointment"
+            autocomplete="on"
+          >
             <div
               class="form__group"
               role="group"
@@ -853,5 +853,7 @@
         <p footer__text>&copy; Copyright 2020</p>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/carousel.js"></script>
   </body>
 </html>

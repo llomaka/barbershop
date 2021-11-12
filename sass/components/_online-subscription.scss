@@ -1,0 +1,7 @@
+.online-subscription {
+  @include subscription-link();
+
+  .prices & {
+    @include subscription-link($white-color);
+  }
+}

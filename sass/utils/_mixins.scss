@@ -1,0 +1,21 @@
+@mixin subscription-link($color: $title-color) {
+  display: inline-block;
+  padding: 11px 19px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  border: 1px solid $accent-color;
+  border-radius: 25px;
+  color: $color;
+  background-color: transparent;
+  transition: color 250ms $timing-function,
+    background-color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $white-color;
+    background-color: $accent-color;
+  }
+}
