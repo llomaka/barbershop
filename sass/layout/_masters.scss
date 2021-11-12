@@ -1,14 +1,39 @@
 .masters {
+  color: $title-color;
   background-color: $background-color-light;
 }
 
 .masters__cross-title {
   @extend %cross-title;
-  color: $title-color;
 }
 
 .masters__title {
   @extend %title;
-  color: $title-color;
   margin-bottom: 44px;
+}
+
+.masters__item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 34px;
+    }
+  }
+}
+
+.masters__caption {
+  padding: 30px;
+  text-align: center;
+}
+
+.masters__name {
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 1.39;
+}
+
+.masters__position {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.36;
+  color: $accent-color;
 }

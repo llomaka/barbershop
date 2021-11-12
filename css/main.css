@@ -421,16 +421,36 @@ address {
 }
 
 .masters {
+  color: #303030;
   background-color: #f7f7f7;
 }
 
-.masters__cross-title {
-  color: #303030;
+.masters__title {
+  margin-bottom: 44px;
 }
 
-.masters__title {
-  color: #303030;
-  margin-bottom: 44px;
+@media screen and (max-width: 767px) {
+  .masters__item:not(:last-child) {
+    margin-bottom: 34px;
+  }
+}
+
+.masters__caption {
+  padding: 30px;
+  text-align: center;
+}
+
+.masters__name {
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 1.39;
+}
+
+.masters__position {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.36;
+  color: #ff6c00;
 }
 
 .social {
