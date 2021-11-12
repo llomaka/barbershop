@@ -633,7 +633,7 @@
             На латинском языке “барба” означает “борода”
           </h3>
           <ul class="portfolio__list">
-            <li class="porftolio__item">
+            <li class="portfolio__item">
               <picture class="portfolio__image">
                 <source
                   media="(max-width: 767px)"
@@ -666,7 +666,7 @@
                 />
               </picture>
             </li>
-            <li class="porftolio__item">
+            <li class="portfolio__item">
               <picture class="portfolio__image">
                 <source
                   media="(max-width: 767px)"
@@ -699,7 +699,7 @@
                 />
               </picture>
             </li>
-            <li class="porftolio__item">
+            <li class="portfolio__item">
               <picture class="portfolio__image">
                 <source
                   media="(max-width: 767px)"
@@ -732,7 +732,7 @@
                 />
               </picture>
             </li>
-            <li class="porftolio__item">
+            <li class="portfolio__item">
               <picture class="portfolio__image">
                 <source
                   media="(max-width: 767px)"
@@ -768,13 +768,9 @@
           </ul>
         </div>
       </section>
-      <section class="contacts section">
+      <section class="appointment section" id="appointment">
         <div class="container">
-          <form
-            class="appointment__form form"
-            id="appointment"
-            autocomplete="on"
-          >
+          <form class="appointment__form form" autocomplete="on">
             <div
               class="form__group"
               role="group"
@@ -795,17 +791,18 @@
                 type="tel"
                 name="phone"
               />
-              <label class="form__label" for="form-comments">сообщение</label>
               <textarea
                 class="form__comments"
-                id="form-comments"
                 name="comments"
-                placeholder="Введите текст"
+                placeholder="Сообщение"
               ></textarea>
             </div>
             <button class="button form__button" type="submit">отправить</button>
           </form>
-
+        </div>
+      </section>
+      <section class="contacts section">
+        <div class="container">
           <h2 class="contacts__title" id="contacts">Контакты</h2>
           <ul class="contacts__list">
             <li class="contacts__item">
