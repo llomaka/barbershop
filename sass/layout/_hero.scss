@@ -1,3 +1,19 @@
+.hero {
+  min-height: 580px;
+  background-color: $background-color-dark;
+  background: $overlay-color;
+
+  @media screen and (min-width: 768) {
+    min-height: 680px;
+  }
+}
+
+.hero__caption {
+  position: absolute;
+  top: 208px;
+  left: 0;
+}
+
 .hero__cross-title {
   @extend %cross-title;
   color: $secondary-title-color;

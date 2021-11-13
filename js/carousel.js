@@ -1,19 +1,19 @@
-const prev = document.querySelector('.carousel__button--previous');
-const next = document.querySelector('.carousel__button--next');
-const images = document.querySelector('.carousel').children;
+const prev = document.querySelector('.carousel__button_previous');
+const next = document.querySelector('.carousel__button_next');
+const images = document.querySelector('.carousel__list').children;
 const totalImages = images.length;
 let index = 0;
 
 prev.addEventListener('click', () => {
-  nextImage('carousel__button--next');
+  nextImage('carousel__button_next');
 })
 
 next.addEventListener('click', () => {
-  nextImage('carousel__button--previous');
+  nextImage('carousel__button_previous');
 })
 
 function nextImage(direction) {
-  if(direction == 'carousel__button--next') {
+  if(direction == 'carousel__button_next') {
     index++;
     if(index == totalImages) {
       index = 0;
@@ -27,7 +27,7 @@ function nextImage(direction) {
   }
 
   for(let i = 0; i < images.length; i++) {
-    images[i].classList.remove('carousel__item--main');
+    images[i].classList.remove('carousel__item_main');
   }
-  images[index].classList.add('carousel__item--main');
+  images[index].classList.add('carousel__item_main');
 }

@@ -1,3 +1,7 @@
+.features {
+  color: $title-color;
+}
+
 .features__cross-title {
   @extend %cross-title;
 }
@@ -5,13 +9,14 @@
 .features__title {
   @extend %title;
   font-size: 42px;
-  line-height: 1.67;
+  line-height: 1.17;
 }
 
 .features__text {
   margin-bottom: 44px;
   font-size: 18px;
   line-height: 1.67;
+  color: $primary-text-color;
 }
 
 .features__list {
@@ -22,12 +27,14 @@
 }
 
 .features__item {
+  overflow: hidden;
+  text-overflow: ellipsis;
+
   @include fbasis(2, 30px);
   max-height: 133px;
-  padding: 20px;
+  padding: 20px 30px;
   text-align: center;
   line-height: 1.36;
-  color: $title-color;
   background-color: $background-color-light;
 
   @media screen and (max-width: 479px) {

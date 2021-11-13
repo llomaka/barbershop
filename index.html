@@ -100,119 +100,123 @@
             </ul>
           </div>
         </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
         <div class="carousel">
           <button
-            class="button carousel__button carousel__button--previous"
+            class="carousel__button carousel__button_previous"
             type="button"
           >
             Назад</button
-          ><button
-            class="button carousel__button carousel__button--next"
-            type="button"
-          >
+          ><button class="carousel__button carousel__button_next" type="button">
             Вперед
           </button>
-          <div class="carousel__item carousel__item--main">
-            <picture class="carousel__image">
-              <source
-                media="(max-width: 767px)"
-                srcset="
-                  ./images/slider-first.jpg    1x,
-                  ./images/slider-first@2x.jpg 2x,
-                  ./images/slider-first@3x.jpg 3x
-                " />
-              <source
-                media="(max-width: 1279px)"
-                srcset="
-                  ./images/slider-first-tab.jpg    1x,
-                  ./images/slider-first-tab@2x.jpg 2x,
-                  ./images/slider-first-tab@3x.jpg 3x
-                " />
-              <source
-                media="(min-width: 1280px)"
-                srcset="
-                  ./images/slider-first-desktop.jpg    1x,
-                  ./images/slider-first-desktop@2x.jpg 2x,
-                  ./images/slider-first-desktop@3x.jpg 3x
-                " />
-              <img
-                src="./images/slider-first.jpg"
-                alt="Мастер стрижет клиента"
-                width="450"
-            /></picture>
-          </div>
-          <div class="carousel__item">
-            <picture class="carousel__image">
-              <source
-                media="(max-width: 767px)"
-                srcset="
-                  ./images/slider-second.jpg    1x,
-                  ./images/slider-second@2x.jpg 2x,
-                  ./images/slider-second@3x.jpg 3x
-                " />
-              <source
-                media="(max-width: 1279px)"
-                srcset="
-                  ./images/slider-second-tab.jpg    1x,
-                  ./images/slider-second-tab@2x.jpg 2x,
-                  ./images/slider-second-tab@3x.jpg 3x
-                " />
-              <source
-                media="(min-width: 1280px)"
-                srcset="
-                  ./images/slider-second-desktop.jpg    1x,
-                  ./images/slider-second-desktop@2x.jpg 2x,
-                  ./images/slider-second-desktop@3x.jpg 3x
-                " />
-              <img
-                src="./images/slider-second.jpg"
-                alt="Мастер стрижет клиента"
-                width="450"
-            /></picture>
-          </div>
-          <div class="carousel__item">
-            <picture class="carousel__image">
-              <source
-                media="(max-width: 767px)"
-                srcset="
-                  ./images/slider-third.jpg    1x,
-                  ./images/slider-third@2x.jpg 2x,
-                  ./images/slider-third@3x.jpg 3x
-                " />
-              <source
-                media="(max-width: 1279px)"
-                srcset="
-                  ./images/slider-third-tab.jpg    1x,
-                  ./images/slider-third-tab@2x.jpg 2x,
-                  ./images/slider-third-tab@3x.jpg 3x
-                " />
-              <source
-                media="(min-width: 1280px)"
-                srcset="
-                  ./images/slider-third-desktop.jpg    1x,
-                  ./images/slider-third-desktop@2x.jpg 2x,
-                  ./images/slider-third-desktop@3x.jpg 3x
-                " />
-              <img
-                src="./images/slider-third.jpg"
-                alt="Мастер стрижет клиента"
-                width="450"
-            /></picture>
+          <ul class="carousel__list">
+            <li class="carousel__item carousel__item_main">
+              <picture class="carousel__image">
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/slider-first.jpg    1x,
+                    ./images/slider-first@2x.jpg 2x,
+                    ./images/slider-first@3x.jpg 3x
+                  " />
+                <source
+                  media="(max-width: 1279px)"
+                  srcset="
+                    ./images/slider-first-tab.jpg    1x,
+                    ./images/slider-first-tab@2x.jpg 2x,
+                    ./images/slider-first-tab@3x.jpg 3x
+                  " />
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/slider-first-desktop.jpg    1x,
+                    ./images/slider-first-desktop@2x.jpg 2x,
+                    ./images/slider-first-desktop@3x.jpg 3x
+                  " />
+                <img
+                  src="./images/slider-first.jpg"
+                  alt="Мастер стрижет клиента"
+                  width="480"
+              /></picture>
+            </li>
+            <li class="carousel__item">
+              <picture class="carousel__image">
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/slider-second.jpg    1x,
+                    ./images/slider-second@2x.jpg 2x,
+                    ./images/slider-second@3x.jpg 3x
+                  " />
+                <source
+                  media="(max-width: 1279px)"
+                  srcset="
+                    ./images/slider-second-tab.jpg    1x,
+                    ./images/slider-second-tab@2x.jpg 2x,
+                    ./images/slider-second-tab@3x.jpg 3x
+                  " />
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/slider-second-desktop.jpg    1x,
+                    ./images/slider-second-desktop@2x.jpg 2x,
+                    ./images/slider-second-desktop@3x.jpg 3x
+                  " />
+                <img
+                  src="./images/slider-second.jpg"
+                  alt="Мастер стрижет клиента"
+                  width="480"
+              /></picture>
+            </li>
+            <li class="carousel__item">
+              <picture class="carousel__image">
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/slider-third.jpg    1x,
+                    ./images/slider-third@2x.jpg 2x,
+                    ./images/slider-third@3x.jpg 3x
+                  " />
+                <source
+                  media="(max-width: 1279px)"
+                  srcset="
+                    ./images/slider-third-tab.jpg    1x,
+                    ./images/slider-third-tab@2x.jpg 2x,
+                    ./images/slider-third-tab@3x.jpg 3x
+                  " />
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/slider-third-desktop.jpg    1x,
+                    ./images/slider-third-desktop@2x.jpg 2x,
+                    ./images/slider-third-desktop@3x.jpg 3x
+                  " />
+                <img
+                  src="./images/slider-third.jpg"
+                  alt="Мастер стрижет клиента"
+                  width="480"
+              /></picture>
+            </li>
+          </ul>
+          <div class="hero__caption">
+            <div class="container">
+              <h2 class="hero__cross-title" lang="en">
+                A hair salon for men in Kyiv
+              </h2>
+              <h1 class="hero__title" lang="en">BarberShop</h1>
+              <p class="hero__tagline">
+                Мы эксперты в модных мужских стрижках. Работаем быстро,
+                осторожно и со вкусом.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="hero">
-          <h2 class="hero__cross-title" lang="en">
-            A hair salon for men in Kyiv
-          </h2>
-          <h1 class="hero__title" lang="en">BarberShop</h1>
-          <p class="hero__tagline">
-            Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и
-            со вкусом.
-          </p>
-        </div>
-      </div>
-    </header>
-    <main>
+      </section>
       <section class="about-us section" id="about-us">
         <div class="container">
           <picture class="about-us__image">
