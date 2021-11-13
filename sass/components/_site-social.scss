@@ -1,6 +1,14 @@
 .site-social {
   color: $title-color;
-  text-align: end;
+  text-align: right;
+
+  .footer & {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 20px;
+  }
 }
 
 .site-social__item {
@@ -8,17 +16,14 @@
 
   &:first-child {
     @media screen and (min-width: 480px) {
-      position: relative;
-      margin-left: 40px;
+      display: flex;
+      align-items: center;
     }
   }
 
   &:first-child::before {
     @media screen and (min-width: 480px) {
-      position: absolute;
-      display: block;
-      left: -100px;
-      top: 7px;
+      margin-right: 40px;
       content: '';
       width: 60px;
       height: 1px;
