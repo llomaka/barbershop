@@ -6,7 +6,7 @@
   overflow: hidden;
   transition: 400ms $timing-function;
 
-  @media screen and (min-width: 768) {
+  @media screen and (min-width: 768px) {
     width: 577px;
     height: 680px;
   }
@@ -61,5 +61,4 @@
   right: 34px;
   bottom: 34px;
   z-index: 10;
-  text-align: right;
 }
