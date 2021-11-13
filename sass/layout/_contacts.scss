@@ -1,3 +1,92 @@
 .contacts {
   background-color: $background-color-dark;
+  background-image: url(../../images/contacts.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.67;
+  color: $secondary-text-color;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../../images/contacts@2x.png);
+  }
+
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    background-image: url(../../images/contacts@3x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../../images/contacts-tab.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../../images/contacts-tab@2x.png);
+    }
+
+    @media (min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url(../../images/contacts-tab@3x.png);
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../../images/contacts-desktop.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../../images/contacts-desktop@2x.png);
+    }
+
+    @media (min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url(../../images/contacts-desktop@3x.png);
+    }
+  }
+}
+
+.contacts__cross-title {
+  @extend %cross-title;
+  color: $white-color;
+
+  &::before {
+    color: $form-text-color;
+  }
+}
+
+.contacts__title {
+  @extend %title;
+  margin-bottom: 40px;
+  font-size: 42px;
+  line-height: 1.67;
+  text-align: center;
+  color: $white-color;
+}
+
+.contacts__list {
+  margin-bottom: 44px;
+}
+
+.contacts__item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.contacts__icon {
+  stroke: currentColor;
+  fill: transparent;
 }

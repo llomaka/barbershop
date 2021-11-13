@@ -1,0 +1,32 @@
+.site-social {
+  color: $title-color;
+  text-align: end;
+}
+
+.site-social__item {
+  display: inline-block;
+
+  &:first-child {
+    @media screen and (min-width: 480px) {
+      position: relative;
+      margin-left: 40px;
+    }
+  }
+
+  &:first-child::before {
+    @media screen and (min-width: 480px) {
+      position: absolute;
+      display: block;
+      left: -100px;
+      top: 7px;
+      content: '';
+      width: 60px;
+      height: 1px;
+      background: currentColor;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+}
