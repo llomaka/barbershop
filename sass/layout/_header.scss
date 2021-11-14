@@ -1,5 +1,9 @@
 .header {
-  position: fixed;
-  margin: 0 auto;
-  background-color: $background-color-dark;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 40px;
+  background-color: transparent;
+  z-index: 20;
 }
