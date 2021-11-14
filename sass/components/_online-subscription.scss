@@ -1,6 +1,12 @@
 .online-subscription {
   @include subscription-link();
 
+  .menu & {
+    width: 194px;
+    margin-bottom: 64px;
+    text-align: center;
+  }
+
   .prices & {
     @include subscription-link($white-color);
   }

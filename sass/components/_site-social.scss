@@ -1,6 +1,16 @@
 .site-social {
   color: $title-color;
 
+  .header & {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+  }
+
   .footer & {
     display: flex;
     flex-wrap: wrap;
@@ -20,6 +30,12 @@
     }
   }
 
+  .header &:not(:first-child) {
+    @media screen and (min-width: 480px) {
+      margin-left: 100px;
+    }
+  }
+
   &:first-child::before {
     @media screen and (min-width: 480px) {
       margin-right: 40px;
@@ -32,5 +48,15 @@
 
   &:not(:last-child) {
     margin-right: 40px;
+  }
+}
+
+.site-social__link {
+  color: inherit;
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
   }
 }

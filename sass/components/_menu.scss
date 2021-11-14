@@ -1,8 +1,21 @@
-.menu {
+.menu__mobile {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+
+.menu__overlay {
+  &.is-open {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $overlay-color;
+    z-index: 29;
+  }
 }
 
 .menu__container {
@@ -15,25 +28,13 @@
     width: 337px;
     height: 100vh;
     flex-direction: column;
-    padding: 48px 40px;
+    padding: 48px 31px 48px 40px;
     z-index: 30;
     color: $title-color;
     background-color: $white-color;
 
     transform: translateY(-100%);
     transition: transform 250ms $timing-function;
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      z-index: 29;
-      background-color: $overlay-color;
-      box-shadow: $overlay-box-shadow;
-    }
   }
 
   @media screen and (min-width: 768px) {
@@ -41,7 +42,7 @@
     height: 100%;
   }
 
-  &.is-open {
+  .menu__overlay.is-open & {
     transform: translateY(0);
   }
 }
@@ -57,16 +58,60 @@
   cursor: pointer;
   color: inherit;
   background-color: transparent;
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .menu__button--open {
   color: $white-color;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .menu__button--close {
-  color: $title-color;
+  align-self: end;
+  margin-bottom: 30px;
 }
 
 .menu__icon {
   fill: currentColor;
+}
+
+.menu__list {
+  margin-bottom: 64px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.1em;
+}
+
+.menu__item {
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.menu__link {
+  color: inherit;
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  .navigation + & {
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.39;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
 }

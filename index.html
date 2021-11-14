@@ -24,81 +24,87 @@
     <header class="header">
       <div class="container">
         <div class="menu">
-          <a href="./index.html" class="logo">
-            <svg class="logo__icon" width="69" height="56">
-              <use href="./images/icons.svg#icon-logo"></use></svg
-          ></a>
-          <button
-            class="menu__button menu__button--open js-open-menu"
-            type="button"
-            aria-expanded="false"
-            js-open-menu
-          >
-            <svg
-              class="menu__icon"
-              width="24"
-              height="16"
-              aria-label="Переключатель мобильного меню"
-              aria-controls="menu__container"
-            >
-              <use href="./images/icons.svg#icon-menu"></use>
-            </svg>
-          </button>
-          <div class="menu__container js-menu-container" id="menu__container">
+          <div class="menu__mobile">
+            <a href="./index.html" class="logo">
+              <svg class="logo__icon" width="69" height="56">
+                <use href="./images/icons.svg#icon-logo"></use></svg
+            ></a>
             <button
-              class="menu__button menu__button--close js-close-menu"
+              class="menu__button menu__button--open js-open-menu"
               type="button"
               aria-expanded="false"
+              js-open-menu
             >
               <svg
                 class="menu__icon"
-                width="19"
-                height="19"
+                width="24"
+                height="16"
                 aria-label="Переключатель мобильного меню"
+                aria-controls="menu__container"
               >
-                <use href="./images/icons.svg#icon-close"></use>
+                <use href="./images/icons.svg#icon-menu"></use>
               </svg>
             </button>
-            <nav class="navigation">
-              <ul class="menu__list">
-                <li class="menu__item">
-                  <a href="#about-us" class="menu__link">О нас</a>
+          </div>
+          <div class="menu__overlay js-menu-container">
+            <div class="menu__container" id="menu__container">
+              <button
+                class="menu__button menu__button--close js-close-menu"
+                type="button"
+                aria-expanded="false"
+              >
+                <svg
+                  class="menu__icon"
+                  width="19"
+                  height="19"
+                  aria-label="Переключатель мобильного меню"
+                >
+                  <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+              </button>
+              <nav class="navigation">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a href="#about-us" class="menu__link">О нас</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#prices" class="menu__link">Услуги и цены</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#masters" class="menu__link">Мастера</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#contacts" class="menu__link">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <a href="tel:+380441111111" class="menu__link"
+                >+38 044 111 11 11</a
+              >
+              <a href="#appointment" class="menu__link online-subscription"
+                >онлайн-запись</a
+              >
+              <ul class="site-social">
+                <li class="site-social__item">
+                  <a
+                    href="https://www.instagram.com/goitclub/"
+                    class="site-social__link"
+                    target="_blank"
+                    rel="noreferrer noopener nofollow"
+                    >Instagram</a
+                  >
                 </li>
-                <li class="menu__item">
-                  <a href="#prices" class="menu__link">Услуги и цены</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#masters" class="menu__link">Мастера</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#contacts" class="menu__link">Контакты</a>
+                <li class="site-social__item">
+                  <a
+                    href="https://www.youtube.com/channel/UCN7NQEBOUuIoXrJZzqVb58Q"
+                    class="site-social__link"
+                    target="_blank"
+                    rel="noreferrer noopener nofollow"
+                    >Youtube</a
+                  >
                 </li>
               </ul>
-            </nav>
-            <a href="tel:+380441111111" class="menu__link">+38 044 111 11 11</a>
-            <a href="#appointment" class="menu__link online-subscription"
-              >онлайн-запись</a
-            >
-            <ul class="site-social">
-              <li class="site-social__item">
-                <a
-                  href="https://www.instagram.com/goitclub/"
-                  class="site-social__link"
-                  target="_blank"
-                  rel="noreferrer noopener nofollow"
-                  >Instagram</a
-                >
-              </li>
-              <li class="site-social__item">
-                <a
-                  href="https://www.youtube.com/channel/UCN7NQEBOUuIoXrJZzqVb58Q"
-                  class="site-social__link"
-                  target="_blank"
-                  rel="noreferrer noopener nofollow"
-                  >Youtube</a
-                >
-              </li>
-            </ul>
+            </div>
           </div>
         </div>
       </div>
