@@ -2,6 +2,8 @@
     const mobileMenu = document.querySelector('.js-menu-container');
     const openMenuBtn = document.querySelector('.js-open-menu');
     const closeMenuBtn = document.querySelector('.js-close-menu');
+    const menuNavigation = document.querySelector('.navigation');
+    const menuAppointment = document.querySelector('.menu__link.online-subscription');
 
     const toggleMenu = () => {
         const isMenuOpen =
@@ -17,6 +19,8 @@
 
     openMenuBtn.addEventListener('click', toggleMenu);
     closeMenuBtn.addEventListener('click', toggleMenu);
+    menuNavigation.addEventListener('click', toggleMenu);
+    menuAppointment.addEventListener('click', toggleMenu);
 
     // Закрываем мобильное меню на более широких экранах
     // в случае изменения ориентации устройства.
@@ -26,4 +30,5 @@
         openMenuBtn.setAttribute('aria-expanded', false);
         bodyScrollLock.enableBodyScroll(document.body);
     });
+
 })();
