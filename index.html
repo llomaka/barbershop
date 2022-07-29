@@ -78,12 +78,14 @@
                   </li>
                 </ul>
               </nav>
-              <a href="tel:+380441111111" class="menu__link"
-                >+38 044 111 11 11</a
-              >
-              <a href="#appointment" class="menu__link online-subscription"
-                >онлайн-запись</a
-              >
+              <div class="menu__contacts menu__list">
+                <a href="tel:+380441111111" class="menu__link"
+                  >+38 044 111 11 11</a
+                >
+                <a href="#appointment" class="menu__link online-subscription"
+                  >онлайн-запись</a
+                >
+              </div>
               <ul class="site-social">
                 <li class="site-social__item">
                   <a
@@ -112,95 +114,99 @@
 
     <main>
       <section class="hero">
-        <div class="carousel">
-          <button
-            class="carousel__button carousel__button_previous"
-            type="button"
-          >
-            Назад</button
-          ><button class="carousel__button carousel__button_next" type="button">
-            Вперед
-          </button>
-          <ul class="carousel__list">
-            <li class="carousel__item carousel__item_main">
-              <picture class="carousel__image">
-                <source
-                  media="(max-width: 767px)"
-                  srcset="
-                    ./images/slider-first.jpg    1x,
-                    ./images/slider-first@2x.jpg 2x,
-                    ./images/slider-first@3x.jpg 3x
-                  " />
-                <source
-                  media="(max-width: 1279px)"
-                  srcset="
-                    ./images/slider-first-tab.jpg    1x,
-                    ./images/slider-first-tab@2x.jpg 2x,
-                    ./images/slider-first-tab@3x.jpg 3x
-                  " />
-                <source
-                  media="(min-width: 1280px)"
-                  srcset="
-                    ./images/slider-first-desktop.jpg    1x,
-                    ./images/slider-first-desktop@2x.jpg 2x,
-                    ./images/slider-first-desktop@3x.jpg 3x
-                  " />
-                <img src="#" alt="Мастер стрижет клиента"
-              /></picture>
-            </li>
-            <li class="carousel__item">
-              <picture class="carousel__image">
-                <source
-                  media="(max-width: 767px)"
-                  srcset="
-                    ./images/slider-second.jpg    1x,
-                    ./images/slider-second@2x.jpg 2x,
-                    ./images/slider-second@3x.jpg 3x
-                  " />
-                <source
-                  media="(max-width: 1279px)"
-                  srcset="
-                    ./images/slider-second-tab.jpg    1x,
-                    ./images/slider-second-tab@2x.jpg 2x,
-                    ./images/slider-second-tab@3x.jpg 3x
-                  " />
-                <source
-                  media="(min-width: 1280px)"
-                  srcset="
-                    ./images/slider-second-desktop.jpg    1x,
-                    ./images/slider-second-desktop@2x.jpg 2x,
-                    ./images/slider-second-desktop@3x.jpg 3x
-                  " />
-                <img src="#" alt="Мастер стрижет клиента"
-              /></picture>
-            </li>
-            <li class="carousel__item">
-              <picture class="carousel__image">
-                <source
-                  media="(max-width: 767px)"
-                  srcset="
-                    ./images/slider-third.jpg    1x,
-                    ./images/slider-third@2x.jpg 2x,
-                    ./images/slider-third@3x.jpg 3x
-                  " />
-                <source
-                  media="(max-width: 1279px)"
-                  srcset="
-                    ./images/slider-third-tab.jpg    1x,
-                    ./images/slider-third-tab@2x.jpg 2x,
-                    ./images/slider-third-tab@3x.jpg 3x
-                  " />
-                <source
-                  media="(min-width: 1280px)"
-                  srcset="
-                    ./images/slider-third-desktop.jpg    1x,
-                    ./images/slider-third-desktop@2x.jpg 2x,
-                    ./images/slider-third-desktop@3x.jpg 3x
-                  " />
-                <img src="#" alt="Мастер стрижет клиента"
-              /></picture>
-            </li>
-          </ul>
+        <div class="hero__wrapper">
+          <div class="carousel">
+            <button
+              class="carousel__button carousel__button_previous"
+              type="button"
+            >
+              Назад
+            </button>
+            <button class="carousel__button carousel__button_next" type="button">
+              Вперед
+            </button>
+            <ul class="carousel__list">
+              <li class="carousel__item carousel__item_main">
+                <picture class="carousel__image">
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/slider-first.jpg    1x,
+                      ./images/slider-first@2x.jpg 2x,
+                      ./images/slider-first@3x.jpg 3x
+                    " />
+                  <source
+                    media="(max-width: 1279px)"
+                    srcset="
+                      ./images/slider-first-tab.jpg    1x,
+                      ./images/slider-first-tab@2x.jpg 2x,
+                      ./images/slider-first-tab@3x.jpg 3x
+                    " />
+                  <source
+                    media="(min-width: 1280px)"
+                    srcset="
+                      ./images/slider-first-desktop.jpg    1x,
+                      ./images/slider-first-desktop@2x.jpg 2x,
+                      ./images/slider-first-desktop@3x.jpg 3x
+                    " />
+                  <img src="#" alt="Мастер стрижет клиента"
+                /></picture>
+              </li>
+              <li class="carousel__item">
+                <picture class="carousel__image">
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/slider-second.jpg    1x,
+                      ./images/slider-second@2x.jpg 2x,
+                      ./images/slider-second@3x.jpg 3x
+                    " />
+                  <source
+                    media="(max-width: 1279px)"
+                    srcset="
+                      ./images/slider-second-tab.jpg    1x,
+                      ./images/slider-second-tab@2x.jpg 2x,
+                      ./images/slider-second-tab@3x.jpg 3x
+                    " />
+                  <source
+                    media="(min-width: 1280px)"
+                    srcset="
+                      ./images/slider-second-desktop.jpg    1x,
+                      ./images/slider-second-desktop@2x.jpg 2x,
+                      ./images/slider-second-desktop@3x.jpg 3x
+                    " />
+                  <img src="#" alt="Мастер стрижет клиента"
+                /></picture>
+              </li>
+              <li class="carousel__item">
+                <picture class="carousel__image">
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/slider-third.jpg    1x,
+                      ./images/slider-third@2x.jpg 2x,
+                      ./images/slider-third@3x.jpg 3x
+                    " />
+                  <source
+                    media="(max-width: 1279px)"
+                    srcset="
+                      ./images/slider-third-tab.jpg    1x,
+                      ./images/slider-third-tab@2x.jpg 2x,
+                      ./images/slider-third-tab@3x.jpg 3x
+                    " />
+                  <source
+                    media="(min-width: 1280px)"
+                    srcset="
+                      ./images/slider-third-desktop.jpg    1x,
+                      ./images/slider-third-desktop@2x.jpg 2x,
+                      ./images/slider-third-desktop@3x.jpg 3x
+                    " />
+                  <img src="#" alt="Мастер стрижет клиента"
+                /></picture>
+              </li>
+            </ul>
+            </div>
+          </div>
           <div class="hero__overlay">
             <div class="container">
               <div class="hero__caption">
@@ -217,8 +223,10 @@
           </div>
         </div>
       </section>
+
       <section class="about-us section" id="about-us">
-        <div class="container">
+        <div class="container about-us__wrapper">
+          <div class="about-us__images">
           <picture class="about-us__image">
             <source
               media="(max-width: 1279px)"
@@ -256,6 +264,8 @@
               alt="Мастер бреет опасной бритвой шею клиента"
               width="330"
           /></picture>
+        </div>
+        <div class="about-us__caption">
           <h3 class="about-us__cross-title">О НАС</h3>
           <h2 class="about-us__title">Лучший Барбершоп твоего города</h2>
           <p class="about-us__tagline">
@@ -271,6 +281,7 @@
           </p>
           <a href="#appointment" class="online-subscription">онлайн-запись</a>
         </div>
+        </div>
       </section>
       <section class="prices section" id="prices">
         <div class="container">
@@ -278,53 +289,60 @@
             Проведи время в компании лучших мастеров
           </h3>
           <h2 class="prices__title">Услуги и цены</h2>
-          <ul class="prices__list">
-            <li class="prices__item">
-              <p class="prices__text">Мужская стрижка</p>
-              <p class="prices__value">от 300 грн.</p>
-            </li>
-            <li class="prices__item">
-              <p class="prices__text">Стрижка бороды</p>
-              <p class="prices__value">от 200 грн.</p>
-            </li>
-            <li class="prices__item">
-              <p class="prices__text">Стрижка усов</p>
-              <p class="prices__value">от 200 грн.</p>
-            </li>
-            <li class="prices__item">
-              <p class="prices__text">Бритье опасной бритвой</p>
-              <p class="prices__value">от 200 грн.</p>
-            </li>
-            <li class="prices__item">
-              <p class="prices__text">Cтрижка у стажера</p>
-              <p class="prices__value">от 50 грн.</p>
-            </li>
-            <li class="prices__item">
-              <p class="prices__text">Стрижка под насадку</p>
-              <p class="prices__value">от 200 грн.</p>
-            </li>
-            <li class="prices__item">
-              <p class="prices__text">Детская стрижка (до 12 лет)</p>
-              <p class="prices__value">от 300 грн.</p>
-            </li>
-            <li class="prices__item">
-              <p class="prices__text">Камуфлирование седины</p>
-              <p class="prices__value">от 200 грн.</p>
-            </li>
-          </ul>
+          <div class="prices__tables">
+            <ul class="prices__list">
+              <li class="prices__item">
+                <p class="prices__text">Мужская стрижка</p>
+                <p class="prices__value">от 300 грн.</p>
+              </li>
+              <li class="prices__item">
+                <p class="prices__text">Стрижка бороды</p>
+                <p class="prices__value">от 200 грн.</p>
+              </li>
+              <li class="prices__item">
+                <p class="prices__text">Стрижка усов</p>
+                <p class="prices__value">от 200 грн.</p>
+              </li>
+              <li class="prices__item">
+                <p class="prices__text">Бритье опасной бритвой</p>
+                <p class="prices__value">от 200 грн.</p>
+              </li>
+            </ul>
+            <ul class="prices__list">
+              <li class="prices__item">
+                <p class="prices__text">Cтрижка у стажера</p>
+                <p class="prices__value">от 50 грн.</p>
+              </li>
+              <li class="prices__item">
+                <p class="prices__text">Стрижка под насадку</p>
+                <p class="prices__value">от 200 грн.</p>
+              </li>
+              <li class="prices__item">
+                <p class="prices__text">Детская стрижка (до 12 лет)</p>
+                <p class="prices__value">от 300 грн.</p>
+              </li>
+              <li class="prices__item">
+                <p class="prices__text">Камуфлирование седины</p>
+                <p class="prices__value">от 200 грн.</p>
+              </li>
+            </ul>
+          </div>
           <div class="prices__subscription">
             <a href="#appointment" class="online-subscription">онлайн-запись</a>
           </div>
         </div>
       </section>
+
       <section class="features section">
-        <div class="container">
-          <h3 class="features__cross-title">старая традиционная школа</h3>
-          <h2 class="features__title">Почему приходят именно к нам?</h2>
-          <p class="features__text">
-            О нас говорят только хорошее. Но лучше 1 раз увидеть и
-            прочувствовать, чем 10 раз прочитать.
-          </p>
+        <div class="container features__wrapper">
+          <div class="features__description">
+            <h3 class="features__cross-title">старая традиционная школа</h3>
+            <h2 class="features__title">Почему приходят именно к нам?</h2>
+            <p class="features__text">
+              О нас говорят только хорошее. Но лучше 1 раз увидеть и
+              прочувствовать, чем 10 раз прочитать.
+            </p>
+          </div>
           <ul class="features__list">
             <li class="features__item">
               <p class="features__value">600</p>
@@ -378,7 +396,7 @@
                     ./images/john-smith-desktop@3x.jpg 3x
                   "
                 />
-                <img src="#" alt="Фото Джона Смита" width="418" />
+                <img src="#" alt="Фото Джона Смита" />
               </picture>
               <div class="masters__caption">
                 <p class="masters__name">John Smith</p>
@@ -465,7 +483,7 @@
                     ./images/michele-doe-desktop@3x.jpg 3x
                   "
                 />
-                <img src="#" alt="Фото Мишель Доу" width="418" />
+                <img src="#" alt="Фото Мишель Доу" />
               </picture>
               <div class="masters__caption">
                 <p class="masters__name">Michele Doe</p>
@@ -552,7 +570,7 @@
                     ./images/alan-black-desktop@3x.jpg 3x
                   "
                 />
-                <img src="#" alt="Фото Алана Блэка" width="418" />
+                <img src="#" alt="Фото Алана Блэка" />
               </picture>
               <div class="masters__caption">
                 <p class="masters__name">Alan Black</p>
@@ -753,82 +771,93 @@
           </ul>
         </div>
       </section>
-      <section class="appointment section" id="appointment">
-        <div class="container">
-          <form class="appointment__form form" autocomplete="on">
-            <div
-              class="form__group"
-              role="group"
-              aria-labelledby="form-details"
-            >
-              <h2 class="form__title" id="form-details">Онлайн-запись</h2>
-              <div class="form__field">
-                <label class="form__label" for="form-name">Имя*</label>
-                <input
-                  class="form__input"
-                  id="form-name"
-                  type="text"
-                  name="name"
-                  required
-                />
-              </div>
-              <div class="form__field">
-                <label class="form__label" for="form-phone">Телефон*</label>
-                <input
-                  class="form__input"
-                  id="form-phone"
-                  type="tel"
-                  name="phone"
-                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                  title="055-123-45-67"
-                  required
-                />
-              </div>
-              <textarea
-                class="form__comments"
-                name="comments"
-                placeholder="Сообщение"
-              ></textarea>
+      <div class="sections__background">
+        <div class="sections__wrapper">
+          <section class="appointment section" id="appointment">
+            <div class="container">
+              <form class="appointment__form form" autocomplete="on">
+                <div
+                  class="form__group"
+                  role="group"
+                  aria-labelledby="form-details"
+                >
+                  <h2 class="form__title" id="form-details">Онлайн-запись</h2>
+                  <div class="form__fields">
+                    <div class="form__field">
+                      <label class="form__label" for="form-name">Имя*</label>
+                      <input
+                        class="form__input"
+                        id="form-name"
+                        type="text"
+                        name="name"
+                        required
+                      />
+                    </div>
+                    <div class="form__field">
+                      <label class="form__label" for="form-phone">Телефон*</label>
+                      <input
+                        class="form__input"
+                        id="form-phone"
+                        type="tel"
+                        name="phone"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                        title="055-123-45-67"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <textarea
+                    class="form__comments"
+                    name="comments"
+                    placeholder="Сообщение"
+                  ></textarea>
+                </div>
+                <button class="button form__button" type="submit">отправить</button>
+              </form>
             </div>
-            <button class="button form__button" type="submit">отправить</button>
-          </form>
+          </section>
+
+          <section class="contacts section">
+            <div class="container">
+              <h2 class="contacts__title" id="contacts">Контакты</h2>
+              <div class="contacts__wrapper">
+                <ul class="contacts__list">
+                  <li class="contacts__item">
+                    <svg class="contacts__icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-pin"></use>
+                    </svg>
+                    <address class="contacts__address">ул. Васильковая, 7А, Киев, 08132</address>
+                  </li>
+                  <li class="contacts__item">
+                    <svg class="contacts__icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                    <a class="contacts__link" href="tel:+380441111111"
+                      >+38 044 111 11 11</a
+                    >
+                  </li>
+                  <li class="contacts__item">
+                    <svg class="contacts__icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-envelope"></use></svg
+                    ><a
+                      class="contacts__link contacts__link_email"
+                      href="mailto:barbershop@email.com"
+                      >barbershop@email.com</a
+                    >
+                  </li>
+                </ul>
+                <div class="contacts__caption">
+                  <h3 class="contacts__cross-title">время работы</h3>
+                  <p class="contacts__text">Ежедневно с 9:00 до 22:00</p>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
-      </section>
-      <section class="contacts section">
-        <div class="container">
-          <h2 class="contacts__title" id="contacts">Контакты</h2>
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <svg class="contacts__icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-pin"></use>
-              </svg>
-              <address>ул. Васильковая, 7А, Киев, 08132</address>
-            </li>
-            <li class="contacts__item">
-              <svg class="contacts__icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-              <a class="contacts__link" href="tel:+380441111111"
-                >+38 044 111 11 11</a
-              >
-            </li>
-            <li class="contacts__item">
-              <svg class="contacts__icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-envelope"></use></svg
-              ><a
-                class="contacts__link contacts__link_email"
-                href="mailto:barbershop@email.com"
-                >barbershop@email.com</a
-              >
-            </li>
-          </ul>
-          <h3 class="contacts__cross-title">время работы</h3>
-          <p class="contacts__text">Ежедневно с 9:00 до 22:00</p>
-        </div>
-      </section>
+      </div>
     </main>
     <footer class="footer">
-      <div class="container">
+      <div class="container footer__wrapper">
         <ul class="site-social">
           <li class="site-social__item">
             <a
@@ -849,7 +878,7 @@
             >
           </li>
         </ul>
-        <p footer__text>&copy; Copyright 2020</p>
+        <p class="footer__text">&copy; Copyright 2022</p>
       </div>
     </footer>
     <script src="./js/mobile-menu.js"></script>

@@ -1,6 +1,42 @@
+.about-us__wrapper {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: 64px;
+  }
+}
+
+.about-us__images {
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    gap: 30px;
+  }
+}
+
 .about-us__image {
   @media screen and (max-width: 767px) {
     display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    width: 330px;
+    height: 235px;
+    &:not(:last-of-type) {
+      margin-bottom: 30px;
+
+      @media screen and (min-width: 1280px) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 270px;
+    height: 445px;
   }
 }
 
@@ -12,11 +48,21 @@
 .about-us__title {
   @extend %title;
   color: $title-color;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 42px;
+    line-height: 1.17;
+  }
 }
 
 .about-us__tagline {
   @extend %tagline;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 1.67;
+  }
 }
 
 .about-us__text {

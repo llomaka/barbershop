@@ -12,3 +12,16 @@
     padding-bottom: 130px;
   }
 }
+
+.sections__background {
+  background-color: $background-color-dark;
+}
+
+.sections__wrapper {
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}

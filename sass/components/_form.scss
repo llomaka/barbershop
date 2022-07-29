@@ -1,18 +1,52 @@
 .form {
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: initial;
+  }
 }
 
 .form__title {
   @extend %title;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
   margin-bottom: 44px;
+}
+
+.form__fields {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 44px;
+  }
 }
 
 .form__field {
   display: flex;
   align-items: center;
-  margin-bottom: 44px;
   border-bottom: 1px solid $form-text-color;
   transition: border-bottom 250ms $timing-function;
+  
+  @media screen and (min-width: 768px) {
+    width: 330px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 265px;
+  }
+
+  &:not(:last-of-type) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 34px;
+    }
+  }
+
+  &:last-of-type {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 44px;
+    }
+  }
 
   &:focus-within {
     border-bottom: 1px solid $white-color;
@@ -58,6 +92,10 @@
   border-bottom: 1px solid $form-text-color;
   outline: none;
   transition: border-bottom 250ms $timing-function;
+
+  @media screen and (min-width: 1280px) {
+    width: 560px;
+  }
 
   &::placeholder {
     @extend .form__label;

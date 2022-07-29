@@ -1,4 +1,10 @@
 .appointment {
   color: $white-color;
   background-color: $background-color-dark;
+
+  &.section {
+    @media screen and (min-width: 1280px) {
+      width: 640px;
+    }
+  }
 }

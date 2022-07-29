@@ -62,20 +62,62 @@
   font-size: 42px;
   line-height: 1.67;
   color: $white-color;
+
+  @media screen and (min-width: 1280px) {
+    line-height: 1.17;
+  }
+}
+
+.prices__tables {
+  background: linear-gradient(
+    180deg,
+    $prices-gradient-color1 0%,
+    $prices-gradient-color2 100%
+  );
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    background: initial;
+  }
 }
 
 .prices__list {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-bottom: 50px;
-  padding: 30px;
   color: $secondary-text-color;
-  background: linear-gradient(
-    180deg,
-    $prices-gradient-color1 0%,
-    $prices-gradient-color2 100%
-  );
+
+  @media screen and (min-width: 1280px) {
+    width: 585px;
+    height: 240px;
+  }
+  
+  &:first-of-type {
+    padding: 30px 30px 20px 30px;
+
+    @media screen and (min-width: 1280px) {
+      padding: 30px 40px 30px;
+      background: linear-gradient(
+        180deg,
+        $prices-gradient-color1 0%,
+        $prices-gradient-color2 100%
+      );
+    }
+  }
+
+  &:last-of-type {
+    margin-bottom: 50px;
+    padding: 0 30px 30px 30px;
+
+    @media screen and (min-width: 1280px) {
+      padding: 30px 40px 30px;
+      background: linear-gradient(
+        180deg,
+        $prices-gradient-color3 0%,
+        $prices-gradient-color4 100%
+      );
+    }
+  }
 }
 
 .prices__item {
@@ -95,6 +137,11 @@
       content: '';
       background-color: $prices-ellipsis-color;
     }
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.67;
   }
 }
 

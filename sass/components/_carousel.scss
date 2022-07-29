@@ -9,6 +9,7 @@
   @media screen and (min-width: 768px) {
     width: 577px;
     height: 680px;
+    margin: 0 0 0 auto;
   }
 
   @media screen and (min-width: 1280px) {
@@ -32,23 +33,28 @@
 }
 
 .carousel__button {
-  position: absolute;
-  padding: 0px;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 15px;
-  letter-spacing: 0.1em;
-  border: none;
-  border-bottom: 1px solid currentColor;
-  color: $secondary-title-color;
-  background-color: transparent;
-  cursor: pointer;
-  transition: color 250ms $timing-function;
+  display: none;
 
-  &:hover,
-  &:focus {
-    color: $white-color;
-  }
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    padding: 0px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    border: none;
+    border-bottom: 1px solid currentColor;
+    color: $secondary-title-color;
+    background-color: transparent;
+    cursor: pointer;
+    transition: color 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+      color: $white-color;
+    }
+}
 }
 
 .carousel__button_previous {

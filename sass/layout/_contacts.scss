@@ -52,6 +52,26 @@
       background-image: url(../../images/contacts-desktop@3x.png);
     }
   }
+
+  &.section {
+    @media screen and (min-width: 1280px) {
+      width: 640px;
+      margin: 0;
+    }
+  }
+
+  & .container {
+    @media screen and (min-width: 1280px) {
+      padding-left: 100px;
+    }
+  }
+}
+
+.contacts__wrapper {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    display: flex;
+    gap: 30px;
+  }
 }
 
 .contacts__cross-title {
@@ -70,10 +90,26 @@
   line-height: 1.67;
   text-align: center;
   color: $white-color;
+
+  @media screen and (min-width: 768px) {
+    text-align: initial;
+  }
+
+  @media screen and (min-width: 1280px) {
+    line-height: 1.17;
+  }
 }
 
 .contacts__list {
   margin-bottom: 44px;
+
+  @media screen and (min-width: 768px) {
+    width: 330px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 70px;
+  }
 }
 
 .contacts__item {
@@ -86,7 +122,14 @@
   }
 }
 
+.contacts__address {
+  @media screen and (min-width: 768px) {
+    width: 230px;
+  }
+}
+
 .contacts__icon {
+  display: block;
   stroke: currentColor;
   fill: transparent;
 }
