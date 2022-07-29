@@ -1162,7 +1162,7 @@ address {
 
 .contacts {
   background-color: #191c26;
-  background-image: url(../../images/contacts.png);
+  background-image: url(../images/contacts.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1173,48 +1173,48 @@ address {
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .contacts {
-    background-image: url(../../images/contacts@2x.png);
+    background-image: url(../images/contacts@2x.png);
   }
 }
 @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
   .contacts {
-    background-image: url(../../images/contacts@3x.png);
+    background-image: url(../images/contacts@3x.png);
   }
 }
 @media screen and (min-width: 768px) {
   .contacts {
-    background-image: url(../../images/contacts-tab.png);
+    background-image: url(../images/contacts-tab.png);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .contacts {
-    background-image: url(../../images/contacts-tab@2x.png);
+    background-image: url(../images/contacts-tab@2x.png);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 3), screen and (min-width: 768px) and (min-resolution: 288dpi), screen and (min-width: 768px) and (min-resolution: 3dppx) {
   .contacts {
-    background-image: url(../../images/contacts-tab@3x.png);
+    background-image: url(../images/contacts-tab@3x.png);
   }
 }
 @media screen and (min-width: 1280px) {
   .contacts {
-    background-image: url(../../images/contacts-desktop.png);
+    background-image: url(../images/contacts-desktop.png);
   }
 }
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .contacts {
-    background-image: url(../../images/contacts-desktop@2x.png);
+    background-image: url(../images/contacts-desktop@2x.png);
   }
 }
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 3), screen and (min-width: 1280px) and (min-resolution: 288dpi), screen and (min-width: 1280px) and (min-resolution: 3dppx) {
   .contacts {
-    background-image: url(../../images/contacts-desktop@3x.png);
+    background-image: url(../images/contacts-desktop@3x.png);
   }
 }
 @media screen and (min-width: 1280px) {
   .contacts.section {
     width: 640px;
-    margin: 0;
+    margin: 0px;
   }
 }
 @media screen and (min-width: 1280px) {
