@@ -1,6 +1,6 @@
 .prices {
   background-color: $prices-background-color;
-  background-image: url(../../images/prices.png);
+  background-image: url(../images/prices.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -9,44 +9,44 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../../images/prices@2x.png);
+    background-image: url(../images/prices@2x.png);
   }
 
   @media (min-device-pixel-ratio: 3),
     (min-resolution: 288dpi),
     (min-resolution: 3dppx) {
-    background-image: url(../../images/prices@3x.png);
+    background-image: url(../images/prices@3x.png);
   }
 
   @media screen and (min-width: 768px) {
-    background-image: url(../../images/prices-tab.png);
+    background-image: url(../images/prices-tab.png);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../../images/prices-tab@2x.png);
+      background-image: url(../images/prices-tab@2x.png);
     }
 
     @media (min-device-pixel-ratio: 3),
       (min-resolution: 288dpi),
       (min-resolution: 3dppx) {
-      background-image: url(../../images/prices-tab@3x.png);
+      background-image: url(../images/prices-tab@3x.png);
     }
   }
 
   @media screen and (min-width: 1280px) {
-    background-image: url(../../images/prices-desktop.png);
+    background-image: url(../images/prices-desktop.png);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../../images/prices-desktop@2x.png);
+      background-image: url(../images/prices-desktop@2x.png);
     }
 
     @media (min-device-pixel-ratio: 3),
       (min-resolution: 288dpi),
       (min-resolution: 3dppx) {
-      background-image: url(../../images/prices-desktop@3x.png);
+      background-image: url(../images/prices-desktop@3x.png);
     }
   }
 }
