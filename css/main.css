@@ -147,8 +147,8 @@ address {
 }
 @media screen and (min-width: 768px) {
   .logo {
-    margin-right: 61px;
-    margin-left: 10px;
+    margin-right: 90px;
+    margin-left: 20px;
     color: #303030;
   }
 }
@@ -171,7 +171,7 @@ address {
     position: relative;
     display: flex;
     align-items: center;
-    width: 690px;
+    width: 725px;
     color: #ffffff;
   }
 }
@@ -593,7 +593,9 @@ address {
 
 @media screen and (min-width: 768px) {
   .hero__wrapper {
+    position: relative;
     width: 768px;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1280px) {
