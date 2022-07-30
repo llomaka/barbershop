@@ -27,10 +27,19 @@
   height: 100%;
   padding-top: 208px;
   background-color: $overlay-color;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 280px;
+    background-color: initial;
+  }
 }
 
 .hero__caption {
   width: 306px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 223px;
+  }
 }
 
 .hero__cross-title {
@@ -41,6 +50,8 @@
 .hero__title {
   @extend %title;
   color: $header-color;
+  font-size: 48px;
+  line-height: 1.17;
 }
 
 .hero__tagline {

@@ -12,9 +12,17 @@
 
     @media screen and (min-width: 768px) {
       position: absolute;
-      top: 500px;
+      flex-direction: row;
+      gap: 40px;
+      top: 450px;
+      left: -100px;
+      transform: rotate(-90deg);
     }
-  }
+
+    @media screen and (min-width: 1280px) {
+      left: -70px;
+    }
+}
 
   .footer & {
     display: flex;
@@ -42,6 +50,10 @@
   .header &:not(:first-child) {
     @media screen and (min-width: 480px) {
       margin-left: 100px;
+
+      @media screen and (min-width: 768px) {
+        margin-left: 0;
+      }
     }
   }
 
@@ -57,6 +69,10 @@
 
   &:not(:last-child) {
     margin-right: 40px;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 0;
+    }
   }
 }
 

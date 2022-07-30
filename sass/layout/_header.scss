@@ -6,4 +6,8 @@
   padding-top: 40px;
   background-color: transparent;
   z-index: 20;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+  }
 }

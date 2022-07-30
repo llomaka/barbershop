@@ -3,9 +3,14 @@
   transition: color 250ms $timing-function;
 
   @media screen and (min-width: 768px) {
-    // margin-top: 32px;
+    margin-right: 61px;
     margin-left: 10px;
     color: $title-color;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 52px;
+    margin-right: 70px;
   }
 
   &:hover,
