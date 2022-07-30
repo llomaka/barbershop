@@ -489,6 +489,7 @@ address {
   .carousel {
     width: 577px;
     height: 680px;
+    right: 0;
     margin: 0 0 0 auto;
   }
 }
